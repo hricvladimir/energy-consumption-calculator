@@ -8,8 +8,8 @@ const ResultsTable = ({hourlyPrice, dayPercentage, kWh}) => {
     const [years, setYears] = useState(1)
 
     return (
-        <div className="results">
-            <h2>Power consumption and price</h2>
+        <section className="section results-section">
+            <h2 className="section-heading">Power consumption and price</h2>
             <table cellSpacing={0}>
 
                 <thead>
@@ -42,7 +42,7 @@ const ResultsTable = ({hourlyPrice, dayPercentage, kWh}) => {
                 </tr>
                 </tbody>
             </table>
-        </div>
+        </section>
 
     );
 };

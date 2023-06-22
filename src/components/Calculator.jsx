@@ -32,14 +32,18 @@ const Calculator = () => {
     }
 
     return (
-        <section className="calculator">
-            <h1>Electricity consumption</h1>
-            <p>This calculator can calculate the price of electricity that is consumed by an appliance</p>
+        <div className="calculator">
+            <section className="section title-section">
+                <h1>Electricity consumption</h1>
+                <p className='paragraph'>This calculator can calculate the price of electricity that is consumed by an appliance</p>
+            </section>
+
 
             <CalculatorForm handleCalculation={handleCalculation}/>
             <ResultsTable hourlyPrice={hourlyPrice} kWh={kWh} dayPercentage={dayPercentage}/>
             <MoreInfo/>
-        </section>
+
+        </div>
     );
 };
 
