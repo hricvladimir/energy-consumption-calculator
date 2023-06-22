@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    /*color-scheme: dark;*/
+}
+
+body {
+    min-height: 100vh;
+}
+
+img, picture, svg, video {
+    display: block;
+    max-width: 100%;
+}
+
+main {
+ background: #dadada;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+/* PAGE HEADER */
+.page-header {
+    width: 100vw;
+    background: #006992;
+    padding: 0 calc((100vw - 1100px + 2rem) / 2);
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.page-header {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* CALCULATOR */
+.calculator {
+
+    color: #006992;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: #ffffff;
+    height: 100vh;
+    padding: 6rem 1rem;
+}
+
+.calculator p {
+    color: #5d5d5d;
+    width: 40%;
+    margin-top: 1rem;
+}
+
+.calculator-form {
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.calculator-form button {
+    display: inline-block;
+    width: 8rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    border: none;
+    border-radius: 4px;
+    background: #006992;
+    color: white;
+}
+
+.form-btn-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+#clear-btn {
+    background: white;
+    color: #006992;
+
+    font-size: 1.25rem;
+
+    border: 2px solid #006992;
+}
+
+.form-field:not(:last-child) {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-field input, .form-field select{
+    max-width: 8rem;
+}
+
+.form-item:not(:last-child) {
+    margin-right: 0.25rem;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+    gap: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.form-fields h4 {
+    margin-bottom: 1.5rem;
+}
+
+.form-fields input, .form-fields select {
+    height: 2.25rem;
+    border-radius: 4px;
+    border: 1px solid #9a9a9a;
+    min-width: 40px;
+    font-weight: normal;
+    font-size: 1rem;
+    padding: 0 0.5rem;
+}
+
+
+.form-fields > div {
+    border: 2px dotted #dadada;
+    padding: 1rem 0.5rem;
+}
+
+@media screen and (min-width:568px) {
+    .form-btn-container {
+        gap: 1rem;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .form-fields {
+        flex-direction: row;
+    }
+
+    .form-field {
+        width: 100rem;
+    }
+}
+
+/* RESULTS */
+
+.results {
+    width: 90%;
+}
+
+.results input {
+    border: none;
+}
+.results table {
+    border-collapse: collapse;
+}
+
+.results td, .results th {
+    border: 1px solid gray;
+    padding: 1rem 1rem;
+    color: black;
+    text-align: center;
+}
+
+
+.results input {
+    border: 1px solid black;
+    width: 3rem;
+    height: 2rem;
+    text-align: center;
+    border-radius: 4px;
+    margin: 0;
+
+}
+
+
